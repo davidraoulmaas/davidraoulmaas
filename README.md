@@ -13,7 +13,7 @@ Currently, I work on **modern data infrastructure and analytics enablement**, co
 
 ---
 
-## Cloud & Infrastructure
+### Cloud & Infrastructure
 
 ![AWS](https://img.shields.io/badge/Cloud-AWS-informational?style=flat&logo=amazon-aws&logoColor=white&color=6aa6f8)
 ![Azure](https://img.shields.io/badge/Cloud-Azure-informational?style=flat&logo=microsoft-azure&logoColor=white&color=6aa6f8)
@@ -22,11 +22,8 @@ Currently, I work on **modern data infrastructure and analytics enablement**, co
 ![Docker](https://img.shields.io/badge/Containers-Docker-informational?style=flat&logo=docker&logoColor=white&color=6aa6f8)
 ![Docker Compose](https://img.shields.io/badge/Containers-Docker%20Compose-informational?style=flat&logo=docker&logoColor=white&color=6aa6f8)
 
-Focused on **scalable, maintainable, and secure data platforms** using modern infrastructure-as-code, containerization, and workflow orchestration practices.
 
----
-
-## Data Engineering & Architecture
+### Data Engineering & Architecture
 
 ![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=306998)
 ![SQL](https://img.shields.io/badge/Language-SQL-informational?style=flat&logo=postgresql&logoColor=white&color=336791)
@@ -37,24 +34,16 @@ Focused on **scalable, maintainable, and secure data platforms** using modern in
 ![SAP HANA](https://img.shields.io/badge/Database-SAP%20HANA-informational?style=flat&logo=sap&logoColor=white&color=0FAAFF)
 ![Matillion](https://img.shields.io/badge/ETL-Matillion-informational?style=flat&logo=matillion&logoColor=white&color=00A651)
 
-I design and implement **data architectures** that enable **scalable analytics**, ensuring quality, lineage, and maintainability across the stack.  
-Experienced with **data modeling (ERD, UML)**, **governance frameworks**, and **orchestration pipelines**.
 
----
-
-## Analytics, BI & Insights
+### Analytics, BI & Insights
 
 ![Power BI](https://img.shields.io/badge/BI-PowerBI-informational?style=flat&logo=powerbi&logoColor=white&color=F2C811)
 ![SAP Analytics Cloud](https://img.shields.io/badge/BI-SAP%20Analytics%20Cloud-informational?style=flat&logo=sap&logoColor=white&color=0FAAFF)
 ![Azure ML Studio](https://img.shields.io/badge/ML-Azure%20Machine%20Learning%20Studio-informational?style=flat&logo=microsoft-azure&logoColor=white&color=6aa6f8)
 ![KNIME](https://img.shields.io/badge/Analytics-KNIME-informational?style=flat&logo=knime&logoColor=white&color=F4D03F)
 
-I empower business stakeholders and analysts through **self-service BI**, **data democratization**, and **governed analytics environments**.  
-Comfortable driving **end-to-end analytics** from **data ingestion to executive dashboards**.
 
----
-
-## DevOps & CI/CD
+### DevOps & CI/CD
 
 ![GitLab](https://img.shields.io/badge/CI/CD-GitLab-informational?style=flat&logo=gitlab&logoColor=white&color=FC6D26)
 ![GitHub](https://img.shields.io/badge/Version%20Control-GitHub-informational?style=flat&logo=github&logoColor=white&color=181717)
@@ -62,22 +51,15 @@ Comfortable driving **end-to-end analytics** from **data ingestion to executive 
 ![Git](https://img.shields.io/badge/Version%20Control-Git-informational?style=flat&logo=git&logoColor=white&color=F05032)
 ![Terraform](https://img.shields.io/badge/IaC-Terraform-informational?style=flat&logo=terraform&logoColor=white&color=6aa6f8)
 
-Building reliable and automated **data deployment pipelines** with **GitLab CI/CD**, **Docker**, and **Terraform** to support a robust DevOps culture.
 
----
-
-## Strategy, Management & Collaboration
+### Strategy, Management & Collaboration
 
 ![Miro](https://img.shields.io/badge/Collaboration-Miro-informational?style=flat&logo=miro&logoColor=white&color=FFD02F)
 ![PowerPoint](https://img.shields.io/badge/Communication-PowerPoint-informational?style=flat&logo=microsoft-powerpoint&logoColor=white&color=E94E1B)
 ![Leadership](https://img.shields.io/badge/Focus-Data%20Strategy%20%26%20Leadership-informational?style=flat&logo=data&logoColor=white&color=6aa6f8)
 
-Experienced in defining **data strategies**, **governance models**, and **analytics roadmaps** aligned with business goals.  
-I thrive at the intersection of **data architecture, people leadership, and organizational enablement** — mentoring teams and shaping scalable data cultures.
 
----
-
-## Also Familiar With
+### Also Familiar With
 
 - **SSIS / SSRS** for integration and reporting  
 - **Pentaho**, **SAP Cloud Platform**, and **SAC** for enterprise data solutions  
@@ -96,18 +78,5 @@ Letting my server work on those rooky numbers: [Git Bot](https://github.com/thes
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=davidraoulmaas&rank_icon=github)](https://github.com/anuraghazra/github-readme-stats)
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=davidraoulmaas)](https://github.com/anuraghazra/github-readme-stats)
 
+[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=davidraoulmaas)](https://github.com/anuraghazra/github-readme-stats)
 
-<!--
-**davidraoulmaas/davidraoulmaas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
