@@ -37,9 +37,8 @@ Menus:
     - identifier: blog
       name: Blog
       title: Blog posts
-      url: #
-      # url: /blogs
-    #   weight: 1
+      url: /blog
+      weight: 1
     # - identifier: gallery
     #   name: Gallery
     #   title: Blog posts
@@ -65,7 +64,7 @@ Menus:
 
 params:
   title: "davidmaas"
-  description: Text about my cool site
+  description: David Raoul Maas is a Data Leader with 10+ years of experience. You can catch a first impression of him on this website.
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -121,7 +120,7 @@ params:
     # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
     # showBrandLogo: false # Show brand logo in nav bar | default is true
     brandName: "davidmaas" # Brand name for the brand | default is the title variable
-    disableSearch: false
+    disableSearch: true
     # searchPlaceholder: "Search"
     stickyNavBar:
       enable : true
@@ -147,7 +146,7 @@ params:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
-      enable: true
+      enable: false
       name: "Resume"
       url: "#"
       download: true
@@ -158,6 +157,10 @@ params:
           url: https://github.com/davidraoulmaas
         - icon: fab fa-linkedin-in
           url: https://www.linkedin.com/in/david-raoul-maas/
+        - icon: fab fa-xing
+          url: https://www.xing.com/profile/DavidRaoul_Maas
+        - icon: fa-solid fa-square-envelope
+          url: mailto:davidmaas_web@outlook.com
       # customIcons:
       #   - icon: /fav.png
       #     url: "https://example.com"
@@ -377,61 +380,58 @@ params:
   #         - icon: fab fa-github
   #           url: https://github.com/gurusabarish/HugoProfileV2
 
-  # #Contact
-  # contact:
-  #   enable: true
-  #   # title: "Custom Name"
-  #   content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
-  #   btnName: Mail me
-  #   btnLink: mailto:gurusabarisha@gmail.com
-  #   # formspree:
-  #   #   enable: true # `contact.email` value will be ignored
-  #   #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
-  #   #   emailCaption: "Enter your email address"
-  #   #   messageCaption: "Enter your message here"
-  #   #   messageRows: 5
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:davidmaas_web@outlook.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
 
-  # footer:
-  #   recentPosts:
-  #     path: "blogs"
-  #     count: 3
-  #     title: Recent Posts
-  #     enable: true
-  #     disableFeaturedImage: false
-  #   socialNetworks:
-  #     github: https://github.com
-  #     linkedin: https://linkedin.com
-  #     twitter: https://twitter.com
-  #     instagram: https://instagram.com
-  #     facebook: https://facebook.com
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/davidraoulmaas
+      linkedin: https://www.linkedin.com/in/david-raoul-maas/
 
   # # List pages like blogs and posts
-  # listPages:
-  #   disableFeaturedImage: false
+  listPages:
+    disableFeaturedImage: false
 
-  # # Single pages like blog and post
-  # singlePages:
-  #   socialShare: true
-  #   readTime:
-  #     enable: true
-  #     content: "min read"
-  #   scrollprogress:
-  #     enable: true
-  #   tags:
-  #     openInNewTab: true
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
 
   # # For translations
-  # terms:
-  #   read: "Read"
-  #   toc: "Table Of Contents"
-  #   copyright: "All rights reserved"
-  #   pageNotFound: "Page not found"
-  #   emailText: "Check out this site"
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
 
-  # datesFormat:
-  #   article: "Jan 2, 2006"
-  #   articleList: "Jan 2, 2006"
-  #   articleRecent: "Jan 2, 2006"
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
 
   #customScripts: -| # You can add custom scripts which will be added before </body> tag
   #  <script type="text/javascript"><!-- any script here --></script>

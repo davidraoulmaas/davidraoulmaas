@@ -2,10 +2,36 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://davidmaas.de/blog/</loc>
+    <lastmod>2025-11-05T16:29:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://davidmaas.de/tags/cloud/</loc>
+    <lastmod>2025-11-05T16:29:21+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://davidmaas.de/tags/cto/</loc>
+    <lastmod>2025-11-05T16:29:21+01:00</lastmod>
+  </url><url>
+    <loc>https://davidmaas.de/tags/data/</loc>
+    <lastmod>2025-11-05T16:29:21+01:00</lastmod>
+  </url><url>
+    <loc>https://davidmaas.de/blog/tco/</loc>
+    <lastmod>2025-11-05T16:29:21+01:00</lastmod>
+  </url><url>
+    <loc>https://davidmaas.de/</loc>
+    <lastmod>2025-11-05T16:29:21+01:00</lastmod>
+  </url><url>
+    <loc>https://davidmaas.de/tags/management/</loc>
+    <lastmod>2025-11-05T16:29:21+01:00</lastmod>
+  </url><url>
+    <loc>https://davidmaas.de/tags/saas/</loc>
+    <lastmod>2025-11-05T16:29:21+01:00</lastmod>
+  </url><url>
+    <loc>https://davidmaas.de/tags/strategy/</loc>
+    <lastmod>2025-11-05T16:29:21+01:00</lastmod>
+  </url><url>
+    <loc>https://davidmaas.de/tags/</loc>
+    <lastmod>2025-11-05T16:29:21+01:00</lastmod>
+  </url><url>
+    <loc>https://davidmaas.de/categories/</loc>
   </url>
 </urlset>

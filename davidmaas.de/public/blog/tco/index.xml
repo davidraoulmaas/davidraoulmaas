@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is Harder Than It Looks on davidmaas</title>
+    <link>https://davidmaas.de/blog/tco/</link>
+    <description>Recent content in Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is Harder Than It Looks on davidmaas</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://davidmaas.de/blog/tco/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on davidmaas</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on davidmaas</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Nov 2025 16:29:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Architecture - Total Cost of Ownership</title>
+      <link>http://localhost:1313/posts/new-post/</link>
+      <pubDate>Wed, 05 Nov 2025 16:29:21 +0100</pubDate>
+      <guid>http://localhost:1313/posts/new-post/</guid>
+      <description>&lt;h2 id=&#34;something&#34;&gt;Something&lt;/h2&gt;&#xA;&lt;p&gt;zzz&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
