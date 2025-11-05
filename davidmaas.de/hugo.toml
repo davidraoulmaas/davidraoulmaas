@@ -1,0 +1,9 @@
+baseURL = 'https://davidmaas.de'
+languageCode = 'en-us'
+title = 'davidmaas'
+theme = 'ananke'
+publishDir = "docs"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
