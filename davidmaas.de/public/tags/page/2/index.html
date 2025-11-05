@@ -181,6 +181,11 @@ Tags | davidmaas
             </a>
 
             
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k to Search...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
 
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -193,6 +198,12 @@ Tags | davidmaas
             
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
                 <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
                     
 
                     
@@ -269,8 +280,8 @@ Tags | davidmaas
                 <div class="card h-100">
                     
                     <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/tags/management/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="Management">Management</h5>
+                        <a href="/tags/organization/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Organization">Organization</h5>
                         </a>
                         <div class="card-text secondary-font">
                             <p></p>
@@ -278,27 +289,7 @@ Tags | davidmaas
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
                         <span class="float-start bg-transparent">Nov 5, 2025</span>
-                        <a href="/tags/management/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card-columns">
-                <div class="card h-100">
-                    
-                    <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/tags/saas/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="SaaS">SaaS</h5>
-                        </a>
-                        <div class="card-text secondary-font">
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Nov 5, 2025</span>
-                        <a href="/tags/saas/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                        <a href="/tags/organization/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -324,6 +315,26 @@ Tags | davidmaas
             </div>
         </div>
         
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/tags/cloud/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Cloud">Cloud</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Nov 5, 2025</span>
+                        <a href="/tags/cloud/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="row justify-content-center">
             <div class="col-auto m-3">
                 
@@ -340,11 +351,14 @@ Tags | davidmaas
       <li class="page-item active">
         <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
+      <li class="page-item">
+        <a href="/tags/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item">
+        <a href="/tags/page/3/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="/tags/page/3/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
             </div>
@@ -463,6 +477,8 @@ Tags | davidmaas
 
 </script>
 
+
+    <script src="/js/search.js"></script>
 
 
 

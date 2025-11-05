@@ -28,17 +28,25 @@
 
 
 
-<meta property="og:url" content="https://davidmaas.de/tags/">
+<meta property="og:url" content="https://davidmaas.de/blog/data-evolution/">
   <meta property="og:site_name" content="davidmaas">
-  <meta property="og:title" content="Tags">
-  <meta property="og:description" content="David Raoul Maas is a Data Leader with 10&#43; years of experience. You can catch a first impression of him on this website.">
+  <meta property="og:title" content="The Evolution of Data Architecture">
+  <meta property="og:description" content="This post looks at the evolution of data architecture archetypes.">
   <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="blog">
+    <meta property="article:published_time" content="2025-11-05T13:29:21+01:00">
+    <meta property="article:modified_time" content="2025-11-05T13:29:21+01:00">
+    <meta property="article:tag" content="CTO">
+    <meta property="article:tag" content="Data">
+    <meta property="article:tag" content="Strategy">
+    <meta property="article:tag" content="Management">
+    <meta property="article:tag" content="Organization">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Tags">
-  <meta name="twitter:description" content="David Raoul Maas is a Data Leader with 10&#43; years of experience. You can catch a first impression of him on this website.">
+  <meta name="twitter:title" content="The Evolution of Data Architecture">
+  <meta name="twitter:description" content="This post looks at the evolution of data architecture archetypes.">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -102,15 +110,18 @@
 
 
 
-<meta name="description" content="Tags of davidmaas">
-<link rel="stylesheet" href="/css/list.css" media="all">
+<meta name="description" content="This post looks at the evolution of data architecture archetypes.">
+<link rel="stylesheet" href="/css/single.css">
+
+
+<script defer src="/fontawesome-6/all-6.4.2.js"></script>
 
 
   
   
 
   <title>
-Tags | davidmaas
+The Evolution of Data Architecture | davidmaas
 
   </title>
 </head>
@@ -271,60 +282,291 @@ Tags | davidmaas
     </nav>
 </header>
 <div id="content">
-<div class="container pt-5" id="list-page">
-    <h2 class="text-center pb-2">Tags</h2>
-    <div class="row">
-        
-        <div class="col-lg-4 col-md-6 my-3">
-            <div class="card-columns">
-                <div class="card h-100">
-                    
-                    <div class="card-body bg-transparent p-4 shadow-sm">
-                        <a href="/tags/saas/" class="primary-font card-title">
-                            <h5 class="card-title bg-transparent" title="SaaS">SaaS</h5>
-                        </a>
-                        <div class="card-text secondary-font">
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Nov 5, 2025</span>
-                        <a href="/tags/saas/" class="float-end btn btn-outline-info btn-sm">Read</a>
-                    </div>
-                </div>
+<section id="single">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-12 col-md-12 col-lg-9">
+        <div class="pr-lg-4">
+          <div class="title mb-5">
+            <h1 class="text-center mb-4">The Evolution of Data Architecture</h1>
+            <div class="text-center">
+              
+                David Raoul Maas, GPTS-5
+                <small>|</small>
+              
+              Nov 5, 2025
+
+              
+              <span id="readingTime">
+                min read
+              </span>
+              
             </div>
+          </div>
+          
+          <div class="featured-image">
+            <img class="img-fluid mx-auto d-block" src="/images/blog_data_evolution.png" alt="The Evolution of Data Architecture">
+          </div>
+          
+          <article class="page-content  p-2">
+          <h2 id="introduction">Introduction</h2>
+<p>If you’ve been around data long enough, you’ve probably seen this movie before.<br>
+First, we fell in love with <em>no-/low-code ETL tools</em> like SSIS, Matillion or Alteryx. Drag-and-drop nodes, colorful workflows, and a promise that “anyone can build data pipelines.”<br>
+Then came the backlash: engineers wanted code, reproducibility, and control. Suddenly, everything had to be <em>in Terraform, Dockerized, and YAML-defined</em>.</p>
+<p>And now?<br>
+We’re swinging back again, toward SaaS-first, declarative, and low-code data platforms.<br>
+Only this time, it’s not because we want simplicity. It’s because <strong>complexity finally became too expensive</strong>.</p>
+<p>Let’s walk through how this evolution happened — and what it tells us about where data architecture is heading next.</p>
+<hr>
+<h2 id="1-the-first-wave">1. The First Wave</h2>
+<p>Back in the 2010s, the main challenge in data engineering was <strong>getting data moved at all</strong>.<br>
+Cloud data warehouses were emerging, but teams were small, and few people could code scalable data pipelines from scratch.</p>
+<p>Tools like <strong>SSIS, Pentaho, Matillion, or Talend</strong> solved this.<br>
+They offered:</p>
+<ul>
+<li>Visual workflows and reusable components</li>
+<li>Quick setup for business logic</li>
+<li>Rapid onboarding for analysts and IT staff</li>
+</ul>
+<p>They made ETL accessible. But also <strong>opaque</strong>.<br>
+You could get something working fast, but six months later, no one knew what that green box actually did. Versioning, CI/CD, and testing were afterthoughts.</p>
+<p>These tools scaled teams. Until they didn’t.</p>
+<hr>
+<h2 id="2-the-iac-era">2. The IaC Era</h2>
+<p>Around the mid-2010s to early 2020s, data teams began to mature technically.<br>
+They wanted control, transparency, and the ability to <em>treat data like software</em>.</p>
+<p>Instead of dragging nodes, we:</p>
+<ul>
+<li><strong>Wrote transformations in SQL or Python</strong></li>
+<li><strong>Managed orchestration in Airflow</strong></li>
+<li><strong>Deployed infrastructure through Cloudformation, DevOps, Terraform</strong></li>
+<li><strong>Dockerized everything</strong>, from extractors to transformers.</li>
+<li>Stitched it all together with open-source tools like <strong>dbt, Meltano, or Prefect</strong></li>
+</ul>
+<p>This was a huge step forward. Technically elegant, highly flexible, and, most importantly, <em>ours</em>.<br>
+We were no longer locked into proprietary ETL GUIs.</p>
+<p>But it came at a price.<br>
+Teams built enormous complexity into their pipelines, often without realizing they were reinventing vendor platforms.<br>
+Data engineering turned into a <strong>DevOps discipline</strong>, not a value-creation one.</p>
+<p>And for smaller orgs, it meant hiring engineers to maintain infrastructure that added little business differentiation.</p>
+<hr>
+<h2 id="3-the-next-wave">3. The Next Wave</h2>
+<p>Now we’re seeing the next shift: <strong>Data as a Service</strong>.</p>
+<p>Modern platforms like <strong>dbt Cloud, Airbyte Cloud, Fivetran, Astronomer, Snowflake Native Apps</strong>, and even <strong>data-as-a-platform</strong> offerings are moving the stack back up the abstraction ladder.</p>
+<p>They’re not “low-code” in the old sense. They’re <strong>high-leverage</strong>.<br>
+You still write SQL or Python, but you don’t need to maintain Dockerfiles, YAMLs, or Terraform modules just to run them.</p>
+<p>This new low-code era isn’t about hiding complexity; it’s about <strong>outsourcing undifferentiated complexity</strong>:</p>
+<ul>
+<li>Managed orchestration instead of Airflow clusters</li>
+<li>SaaS-native connectors instead of homegrown ELT scripts</li>
+<li>Declarative configuration (“what”) instead of procedural operations (“how”)</li>
+</ul>
+<p>You focus on data models, quality, and insights. Not on keeping containers alive.</p>
+<hr>
+<h2 id="4-why-the-pendulum-swings-back">4. Why the Pendulum Swings Back</h2>
+<p>Every technical discipline moves in cycles.<br>
+Abstraction goes up when teams crave productivity, and down when they crave control.</p>
+<p>Data engineering is no different.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Era</th>
+          <th>Motto</th>
+          <th>Core Trade-off</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Low-Code ETL (2010s)</strong></td>
+          <td>“Make it easy for anyone.”</td>
+          <td>Fast to start, slow to maintain</td>
+      </tr>
+      <tr>
+          <td><strong>DIY Infrastructure (2020s)</strong></td>
+          <td>“We need control.”</td>
+          <td>Powerful, but expensive in people</td>
+      </tr>
+      <tr>
+          <td><strong>SaaS / Data-as-a-Service (Now)</strong></td>
+          <td>“Focus on what matters.”</td>
+          <td>Outsourced ops, vendor dependency</td>
+      </tr>
+  </tbody>
+</table>
+<p>We’re learning that <strong>control is not always value</strong>.<br>
+Just because you <em>can</em> Dockerize and Terraform your entire ELT stack doesn’t mean you <em>should</em>.</p>
+<p>Unless you’re a platform company yourself, the ROI on fully custom infrastructure is usually negative after year one.</p>
+<hr>
+<h2 id="5-the-human-side-of-the-shift">5. The Human Side of the Shift</h2>
+<p>Each architectural era also creates a different kind of data team.</p>
+<ul>
+<li><strong>Low-code ETL</strong> → Business-heavy, tool-driven analysts</li>
+<li><strong>DIY Era</strong> → Infra-heavy, code-driven engineers</li>
+<li><strong>Modern SaaS / Low-Ops</strong> → Product-oriented analytics engineers</li>
+</ul>
+<p>That last one is important.<br>
+The future of data isn’t about full-stack data engineers who manage Kubernetes clusters; it’s about <strong>analytics engineers who ship value fast</strong> on managed platforms.</p>
+<p>That shift is as much cultural as it is technical.</p>
+<hr>
+<h2 id="6-where-were-heading">6. Where We’re Heading</h2>
+<p>We’re entering a world where:</p>
+<ul>
+<li>Pipelines are declarative, not imperative</li>
+<li>Infrastructure is rented, not built</li>
+<li>Data products are versioned, tested, and observable out of the box</li>
+</ul>
+<p>The most successful data teams won’t be the ones with the most YAMLs, but the ones who understand <strong>which parts of the stack to own</strong> and which parts to delegate.</p>
+<p>And ironically, after a decade of “everything-as-code,” we’re rediscovering that sometimes, the best code is <strong>no code at all</strong>.</p>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>Data architecture has gone full circle:<br>
+From drag-and-drop nodes → to code and containers → back to managed, declarative systems.</p>
+<p>Each step solved a real problem and overcorrected in the process.<br>
+What we’re seeing now is a more balanced era, where <em>low-code</em> doesn’t mean <em>low-control</em>, and <em>SaaS</em> doesn’t mean <em>shallow</em>.</p>
+<p>The lesson?<br>
+Don’t fall in love with any particular stage of the pendulum.<br>
+Focus on what your organization actually needs:<br>
+<strong>Speed, clarity, and sustainable ownership</strong>. no matter how much code it takes.</p>
+
+          </article>
         </div>
-        
-        <div class="row justify-content-center">
-            <div class="col-auto m-3">
-                
-    <ul class="pagination pagination-default">
-      <li class="page-item">
-        <a href="/tags/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/tags/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item active">
-        <a aria-current="page" aria-label="Page 3" class="page-link" role="button">3</a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-3">
+        <div id="stickySideBar" class="sticky-sidebar">
+          
+          <aside class="toc">
+              <h5>
+                Table Of Contents
+              </h5>
+              <div class="toc-content">
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#1-the-first-wave">1. The First Wave</a></li>
+    <li><a href="#2-the-iac-era">2. The IaC Era</a></li>
+    <li><a href="#3-the-next-wave">3. The Next Wave</a></li>
+    <li><a href="#4-why-the-pendulum-swings-back">4. Why the Pendulum Swings Back</a></li>
+    <li><a href="#5-the-human-side-of-the-shift">5. The Human Side of the Shift</a></li>
+    <li><a href="#6-where-were-heading">6. Where We’re Heading</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+              </div>
+          </aside>
+          
+
+          
+          <aside class="tags">
+            <h5>Tags</h5>
+            <ul class="tags-ul list-unstyled list-inline">
+              
+              <li class="list-inline-item"><a href="https://davidmaas.de/tags/cto"
+                target="_blank"
+              >CTO</a></li>
+              
+              <li class="list-inline-item"><a href="https://davidmaas.de/tags/data"
+                target="_blank"
+              >Data</a></li>
+              
+              <li class="list-inline-item"><a href="https://davidmaas.de/tags/strategy"
+                target="_blank"
+              >Strategy</a></li>
+              
+              <li class="list-inline-item"><a href="https://davidmaas.de/tags/management"
+                target="_blank"
+              >Management</a></li>
+              
+              <li class="list-inline-item"><a href="https://davidmaas.de/tags/organization"
+                target="_blank"
+              >Organization</a></li>
+              
+            </ul>
+          </aside>
+          
+
+          
+          <aside class="social">
+            <h5>Social</h5>
+            <div class="social-content">
+              <ul class="list-inline">
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://www.linkedin.com/feed/?shareActive=true&text=This%20post%20looks%20at%20the%20evolution%20of%20data%20architecture%20archetypes. https%3a%2f%2fdavidmaas.de%2fblog%2fdata-evolution%2f">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='https://twitter.com/share?text=The%20Evolution%20of%20Data%20Architecture&url=https%3a%2f%2fdavidmaas.de%2fblog%2fdata-evolution%2f&hashtags=CTO%2cData%2cStrategy%2cManagement%2cOrganization'>
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=The%20Evolution%20of%20Data%20Architecture: https%3a%2f%2fdavidmaas.de%2fblog%2fdata-evolution%2f">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item text-center">
+                  <a target="_blank" href='mailto:?subject=The%20Evolution%20of%20Data%20Architecture&amp;body=Check%20out%20this%20site https%3a%2f%2fdavidmaas.de%2fblog%2fdata-evolution%2f'>
+                    <i class="fa fa-envelope"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
+          </aside>
+          
         </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-9 p-4">
+        
+      </div>
+    </div>
+  </div>
+  <button class="p-2 px-3" onclick="topFunction()" id="topScroll">
+    <i class="fas fa-angle-up"></i>
+  </button>
+</section>
+
+
+<div class="progress">
+  <div id="scroll-progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
+<Script src="/js/scrollProgressBar.js"></script>
+
+
+<script>
+  var topScroll = document.getElementById("topScroll");
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      topScroll.style.display = "block";
+    } else {
+      topScroll.style.display = "none";
+    }
+  }
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  
+  let stickySideBarElem = document.getElementById("stickySideBar");
+  let stickyNavBar =  true ;
+  if(stickyNavBar) {
+    let headerElem = document.getElementById("profileHeader");
+    let headerHeight = headerElem.offsetHeight + 15;
+    stickySideBarElem.style.top = headerHeight + "px";
+  } else {
+    stickySideBarElem.style.top = "50px";
+  }
+</script>
+
+
+<script src="/js/readingTime.js"></script>
+
+
 
   </div><footer>
     

@@ -2,7 +2,7 @@
 title: "Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is Harder Than It Looks"
 date: 2025-11-05T16:29:21+01:00
 draft: false
-author: "David Raoul Maas"
+author: "David Raoul Maas, GPTS-5"
 tags:
   - CTO
   - Data
@@ -11,7 +11,7 @@ tags:
   - SaaS
   - Cloud
 image: /images/blog_tco_iceberg.png
-description: ""
+description: "This blog post tries to emphasize why value-driven decision making should matter."
 toc:
 ---
 

@@ -181,6 +181,11 @@ Strategy | davidmaas
             </a>
 
             
+                <div>
+                    <input id="search" autocomplete="off" class="form-control mr-sm-2 d-none d-md-block" placeholder='Ctrl &#43; k to Search...'
+                        aria-label="Search" oninput="searchOnChange(event)">
+                </div>
+            
 
             
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
@@ -193,6 +198,12 @@ Strategy | davidmaas
             
             <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
                 <ul class="navbar-nav ms-auto text-center">
+                    
+                        <li class="nav-item navbar-text d-block d-md-none">
+                            <div class="nav-link">
+                                <input id="search" autocomplete="off" class="form-control mr-sm-2" placeholder='Ctrl &#43; k to Search...' aria-label="Search" oninput="searchOnChange(event)">
+                            </div>
+                        </li>
                     
 
                     
@@ -269,6 +280,35 @@ Strategy | davidmaas
                 <div class="card h-100">
                     
                     <div class="card-header">
+                        <a href="/blog/data-org/">
+                            <img src="/images/blog_data_org.png" class="card-img-top" alt="Should the Data Organization Sit in IT?">
+                        </a>
+                    </div>
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/blog/data-org/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="Should the Data Organization Sit in IT?">Should the Data …</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p><h2 id="introduction">Introduction</h2>
+<p>Few questions in data leadership spark as much debate as this one:<br>
+<strong>Should the data organization sit in IT, or should it stand on its own?</strong></p>
+<p>At first glance, it sounds like an org-chart detail. In reality, it defines how your company thinks about data: as <em>infrastructure</em> or as <em>a product</em>. …</p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Nov 5, 2025</span>
+                        <a href="/blog/data-org/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-header">
                         <a href="/blog/tco/">
                             <img src="/images/blog_tco_iceberg.png" class="card-img-top" alt="Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is Harder Than It Looks">
                         </a>
@@ -288,6 +328,35 @@ Strategy | davidmaas
                     <div class="mt-auto post-footer bg-transparent py-3">
                         <span class="float-start bg-transparent">Nov 5, 2025</span>
                         <a href="/blog/tco/" class="float-end btn btn-outline-info btn-sm">Read</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6 my-3">
+            <div class="card-columns">
+                <div class="card h-100">
+                    
+                    <div class="card-header">
+                        <a href="/blog/data-evolution/">
+                            <img src="/images/blog_data_evolution.png" class="card-img-top" alt="The Evolution of Data Architecture">
+                        </a>
+                    </div>
+                    
+                    <div class="card-body bg-transparent p-4 shadow-sm">
+                        <a href="/blog/data-evolution/" class="primary-font card-title">
+                            <h5 class="card-title bg-transparent" title="The Evolution of Data Architecture">The Evolution of Data …</h5>
+                        </a>
+                        <div class="card-text secondary-font">
+                            <p><h2 id="introduction">Introduction</h2>
+<p>If you’ve been around data long enough, you’ve probably seen this movie before.<br>
+First, we fell in love with <em>no-/low-code ETL tools</em> like SSIS, Matillion or Alteryx. Drag-and-drop nodes, colorful workflows, and a promise that “anyone can build data pipelines.”<br>
+Then came the backlash: …</p></p>
+                        </div>
+                    </div>
+                    <div class="mt-auto post-footer bg-transparent py-3">
+                        <span class="float-start bg-transparent">Nov 5, 2025</span>
+                        <a href="/blog/data-evolution/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
             </div>
@@ -412,6 +481,8 @@ Strategy | davidmaas
 
 </script>
 
+
+    <script src="/js/search.js"></script>
 
 
 

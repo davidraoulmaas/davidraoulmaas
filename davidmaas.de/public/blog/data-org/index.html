@@ -28,26 +28,35 @@
 
 
 
-<meta property="og:url" content="https://davidmaas.de/blog/tco/">
+<meta property="og:url" content="https://davidmaas.de/blog/data-org/">
   <meta property="og:site_name" content="davidmaas">
-  <meta property="og:title" content="Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is Harder Than It Looks">
-  <meta property="og:description" content="This blog post tries to emphasize why value-driven decision making should matter.">
+  <meta property="og:title" content="Should the Data Organization Sit in IT?">
+  <meta property="og:description" content="Introduction Few questions in data leadership spark as much debate as this one:
+Should the data organization sit in IT, or should it stand on its own?
+At first glance, it sounds like an org-chart detail. In reality, it defines how your company thinks about data: as infrastructure or as a product.
+I’ve seen both setups and both can work.
+But the placement of the data team deeply shapes its culture, priorities, and even its speed.
+And while many companies instinctively tuck data under IT, that’s often more out of legacy convenience than strategic clarity.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="blog">
-    <meta property="article:published_time" content="2025-11-05T16:29:21+01:00">
-    <meta property="article:modified_time" content="2025-11-05T16:29:21+01:00">
+    <meta property="article:published_time" content="2025-11-05T18:29:21+01:00">
+    <meta property="article:modified_time" content="2025-11-05T18:29:21+01:00">
     <meta property="article:tag" content="CTO">
     <meta property="article:tag" content="Data">
     <meta property="article:tag" content="Strategy">
     <meta property="article:tag" content="Management">
-    <meta property="article:tag" content="SaaS">
-    <meta property="article:tag" content="Cloud">
+    <meta property="article:tag" content="Organization">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is Harder Than It Looks">
-  <meta name="twitter:description" content="This blog post tries to emphasize why value-driven decision making should matter.">
+  <meta name="twitter:title" content="Should the Data Organization Sit in IT?">
+  <meta name="twitter:description" content="Introduction Few questions in data leadership spark as much debate as this one:
+Should the data organization sit in IT, or should it stand on its own?
+At first glance, it sounds like an org-chart detail. In reality, it defines how your company thinks about data: as infrastructure or as a product.
+I’ve seen both setups and both can work.
+But the placement of the data team deeply shapes its culture, priorities, and even its speed.
+And while many companies instinctively tuck data under IT, that’s often more out of legacy convenience than strategic clarity.">
 
 
 <link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
@@ -111,7 +120,7 @@
 
 
 
-<meta name="description" content="This blog post tries to emphasize why value-driven decision making should matter.">
+<meta name="description" content="">
 <link rel="stylesheet" href="/css/single.css">
 
 
@@ -122,7 +131,7 @@
   
 
   <title>
-Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is Harder Than It Looks | davidmaas
+Should the Data Organization Sit in IT? | davidmaas
 
   </title>
 </head>
@@ -289,7 +298,7 @@ Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is
       <div class="col-sm-12 col-md-12 col-lg-9">
         <div class="pr-lg-4">
           <div class="title mb-5">
-            <h1 class="text-center mb-4">Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is Harder Than It Looks</h1>
+            <h1 class="text-center mb-4">Should the Data Organization Sit in IT?</h1>
             <div class="text-center">
               
                 David Raoul Maas, GPTS-5
@@ -306,128 +315,172 @@ Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is
           </div>
           
           <div class="featured-image">
-            <img class="img-fluid mx-auto d-block" src="/images/blog_tco_iceberg.png" alt="Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is Harder Than It Looks">
+            <img class="img-fluid mx-auto d-block" src="/images/blog_data_org.png" alt="Should the Data Organization Sit in IT?">
           </div>
           
           <article class="page-content  p-2">
           <h2 id="introduction">Introduction</h2>
-<p>Every leadership team faces the same strategic dilemma sooner or later:<br>
-<strong>Should we build our own data stack, or should we buy into managed solutions?</strong></p>
-<p>On paper, the choice seems straightforward. “Building” gives you control and flexibility; “buying” gives you speed and convenience. In reality, the trade-offs run much deeper, especially when you look through the lens of <strong>Total Cost of Ownership (TCO)</strong>.</p>
-<p>Over the last few years, I’ve seen and have been part of teams starting with a DIY approach. State-of-the-art, terraform, containers, Airflow, dbt core, the works. It feels empowering: you control the stack, optimize for cost, and get to build something elegant and custom.<br>
-But as months pass, the picture changes. What starts as an engineering playground quickly becomes a maintenance treadmill.</p>
-<p>Let’s unpack why that happens and how TCO helps reveal the real dimensions of “make vs. buy.”</p>
+<p>Few questions in data leadership spark as much debate as this one:<br>
+<strong>Should the data organization sit in IT, or should it stand on its own?</strong></p>
+<p>At first glance, it sounds like an org-chart detail. In reality, it defines how your company thinks about data: as <em>infrastructure</em> or as <em>a product</em>.</p>
+<p>I’ve seen both setups and both can work.<br>
+But the placement of the data team deeply shapes its culture, priorities, and even its speed.<br>
+And while many companies instinctively tuck data under IT, that’s often more out of legacy convenience than strategic clarity.</p>
+<p>Let’s unpack what really drives this decision — and when it might be time to move your data team out of IT’s basement.</p>
 <hr>
-<h2 id="1-the-illusion-of-control">1. The Illusion of Control</h2>
-<p>In young or fast-growing companies, building in-house looks attractive.<br>
-Your engineers are smart, cloud resources are cheap, and modern tools make ELT development easier than ever. Spinning up your own containerized, Terraform-managed stack seems like the “grown-up” thing to do.</p>
-<p>The appeal is real:</p>
+<h2 id="1-purpose-and-maturity">1. Purpose and Maturity</h2>
+<p>The first question is simple but revealing:<br>
+<strong>What is your data team actually responsible for?</strong></p>
 <ul>
-<li>You get <strong>full control</strong> over the architecture.</li>
-<li>You can <strong>fine-tune costs</strong> and skip expensive SaaS tiers.</li>
-<li>You stay <strong>independent from vendors</strong> and keep your data in your own hands.</li>
+<li>
+<p>If your main goal is <strong>reliable pipelines, stable infrastructure, and compliance</strong>, then IT alignment makes sense.<br>
+IT already knows how to run systems, standardize tools, and manage SLAs.</p>
+</li>
+<li>
+<p>But if your team’s mission is <strong>insights, enablement, and data products</strong>, the IT framing quickly becomes a bottleneck.<br>
+Data becomes less about tickets and uptime and more about discovery and iteration.</p>
+</li>
 </ul>
-<p>But control comes at a price and not always the one you expect.</p>
+<p>In early-stage companies, data often starts close to product or finance. It’s lightweight, business-driven, and fast.<br>
+Over time, as complexity grows, someone inevitably says: <em>“We need to formalize this - let’s move it under IT.”</em><br>
+That’s when data starts to slow down.</p>
+<p><strong>Rule of thumb:</strong><br>
+The more your data team drives business value, the less it belongs in IT.</p>
 <hr>
-<h2 id="2-tco-not-on-the-invoice">2. TCO: Not on the Invoice</h2>
-<p>When people compare solutions, they usually look at the obvious:</p>
+<h2 id="2-ownership-of-outcomes">2. Ownership of Outcomes</h2>
+<p>Here’s where many orgs stumble.<br>
+IT typically owns systems, not outcomes. Their mandate is uptime, security, and efficiency and not whether marketing understands customer churn. I&rsquo;ve met IT guys that don&rsquo;t even know what customer churn means.</p>
+<p>If your data team sits in IT, it risks becoming a <strong>service center</strong>:</p>
 <ul>
-<li>Cloud compute</li>
-<li>Storage</li>
-<li>SaaS subscriptions</li>
+<li>“Can you build me a report?”</li>
+<li>“Can you add this new data source?”</li>
 </ul>
-<p>That’s only part of the story. The <strong>Total Cost of Ownership</strong> adds layers most teams don’t quantify:</p>
+<p>If your data team sits closer to business or product, it becomes an <strong>enabler</strong>:</p>
 <ul>
-<li><strong>Engineering Time</strong>: Hours spent writing Terraform modules, debugging Airflow DAGs, and patching dependencies.</li>
-<li><strong>Context Switching</strong>: Analysts and data engineers stuck between infra, ingestion, and transformation tasks.</li>
-<li><strong>Operational Fatigue</strong>: Handling downtime, schema drift, and pipeline failures.</li>
-<li><strong>Talent Lifecycle</strong>: Building infra roles that you might not need a year later.</li>
+<li>“How can we measure this experiment?”</li>
+<li>“What’s the driver behind this drop in conversion?”</li>
 </ul>
-<p>In other words: your cloud bill isn’t your TCO. Your <em>team calendar</em> is.</p>
+<p>Both models deliver data, but only one delivers insight.<br>
+And if you’re trying to make data part of your decision-making culture, you need ownership aligned with business outcomes, not just system health.</p>
 <hr>
-<h2 id="3-slow-data-stacks">3. Slow Data Stacks</h2>
-<p>The biggest hidden cost in “make” decisions is <strong>time-to-value</strong>.</p>
-<p>Standing up your own ELT platform sounds good, but getting from a prototype to a reliable, production-grade setup takes months. Every layer, orchestration, logging, secrets management, observability, CI/CD, needs attention. By the time everything runs smoothly, your team might already have shifted focus.</p>
-<p>And here’s the painful part:<br>
-Once the system is stable, the <em>infrastructure engineers you hired for setup are no longer critical</em>. You’ve built a platform that mostly runs itself but you still have the overhead of maintaining it, and often, a team whose core contribution was front-loaded.</p>
-<p>That’s the part of TCO that’s rarely modeled: the cost of <strong>building a team you don’t really need long-term</strong>.</p>
-<hr>
-<h2 id="4-renting-velocity">4. Renting Velocity</h2>
-<p>Managed solutions like <strong>Astronomer</strong> or <strong>Dagster</strong> might flip that equation. You’re not paying for software features, you are paying to <em>not think about infrastructure</em>. Setup takes days, not months. Pipelines run reliably out of the box. Your team stays focused on delivering value.</p>
-<p>Of course, it comes with trade-offs:</p>
-<ul>
-<li>You’ll pay more per seat or per run.</li>
-<li>You’ll have less control over the runtime.</li>
-<li>You’ll live with vendor roadmaps and SLAs.</li>
-</ul>
-<p>But here’s the thing: <strong>for small and mid-sized teams, that’s a feature, not a bug</strong>.<br>
-When you’re still finding your analytical footing, outsourcing stability and observability can save you months of setup and years of maintenance.</p>
-<hr>
-<h2 id="5-tco-is-multi-dimensional">5. TCO Is Multi-Dimensional</h2>
-<p>Thinking about TCO as just “cost” misses the point. It’s multi-dimensional, it’s about <strong>focus</strong>, <strong>speed</strong>, and <strong>risk</strong>.</p>
+<h2 id="3-speed-vs-standardization">3. Speed vs. Standardization</h2>
+<p>This is the most visible tension.</p>
 <table>
   <thead>
       <tr>
-          <th>Dimension</th>
-          <th>DIY Bias</th>
-          <th>Managed Bias</th>
-          <th>Typical Tradeoff</th>
+          <th>Factor</th>
+          <th>Data in IT</th>
+          <th>Data Outside IT</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td><strong>Initial Cost</strong></td>
-          <td>Lower (infra only)</td>
-          <td>Higher (subscriptions)</td>
-          <td>DIY wins early</td>
+          <td><strong>Speed of delivery</strong></td>
+          <td>Slower (process-heavy)</td>
+          <td>Faster (closer to decision-makers)</td>
       </tr>
       <tr>
-          <td><strong>Time-to-Value</strong></td>
-          <td>Slow</td>
-          <td>Immediate</td>
-          <td>Managed wins by months</td>
+          <td><strong>Standardization</strong></td>
+          <td>Strong (central control)</td>
+          <td>Risk of duplication</td>
       </tr>
       <tr>
-          <td><strong>Maintenance</strong></td>
-          <td>Continuous</td>
-          <td>Offloaded</td>
-          <td>Managed wins long-term</td>
+          <td><strong>Governance</strong></td>
+          <td>Built-in</td>
+          <td>Needs explicit effort</td>
       </tr>
       <tr>
-          <td><strong>Flexibility</strong></td>
-          <td>Full control</td>
-          <td>Limited knobs</td>
-          <td>DIY wins if you truly need customization</td>
-      </tr>
-      <tr>
-          <td><strong>Team Focus</strong></td>
-          <td>Infra-heavy</td>
-          <td>Analytics-heavy</td>
-          <td>Managed lets you focus on insights</td>
+          <td><strong>Innovation</strong></td>
+          <td>Conservative</td>
+          <td>Experimental</td>
       </tr>
   </tbody>
 </table>
-<p>For small teams especially, time-to-value and focus often outweigh control. You can always bring pieces back in-house once you outgrow the managed layers.</p>
+<p>Neither is “better”, they’re optimized for different things.<br>
+If you’re a bank, IT’s rigor is an advantage.<br>
+If you’re a startup, it’s an anchor.</p>
+<p>The trick is not to pick one forever, but to <strong>evolve</strong>:</p>
+<ul>
+<li>Early phase → under IT for structure and compliance</li>
+<li>Growth phase → hybrid model for agility</li>
+<li>Mature phase → federated ownership under a CDO or domain structure</li>
+</ul>
 <hr>
-<h2 id="6-the-lifecycle-trap">6. The “Lifecycle Trap”</h2>
-<p>There’s a lifecycle pattern that repeats across organizations:</p>
-<ol>
-<li><strong>Exploration Phase:</strong> DIY looks attractive - flexibility and cost savings.</li>
-<li><strong>Implementation Phase:</strong> The team grows to build infra. Progress is slow but exciting.</li>
-<li><strong>Stabilization Phase:</strong> Infrastructure is done, but now the team’s focus shifts. Engineers become platform maintainers instead of value creators.</li>
-<li><strong>Realization Phase:</strong> You start evaluating managed solutions again to regain velocity.</li>
-</ol>
-<p>Most companies could skip phases 1–3 entirely if they were honest about their priorities. Unless your data platform <em>is</em> your product, <strong>you probably don’t need to own your stack end-to-end</strong>.</p>
+<h2 id="4-talent-and-culture">4. Talent and Culture</h2>
+<p>Where your data org lives determines the kind of people it attracts.</p>
+<p>In IT, you get system thinkers, reliable, process-driven engineers.<br>
+Outside IT, you attract product thinkers, curious, business-fluent problem solvers.</p>
+<p>Both are valuable, but mixing them under the wrong leadership can create cultural friction.<br>
+You can’t tell someone measured on SLA uptime to “experiment fast.”<br>
+And you can’t tell a data analyst embedded in product to “raise a Jira ticket to add a table.”</p>
+<p>If your goal is to bridge technical depth with business impact, data probably needs its own leadership and cultural space.</p>
 <hr>
-<h2 id="7-conclusion-buy-back-your-focus">7. Conclusion: Buy Back Your Focus</h2>
-<p>The build vs. buy debate isn’t really about cost. It’s about <strong>what your team’s time is worth</strong>.</p>
-<p>Building your own ELT stack with Terraform, containers, and open-source tools can be an educational and empowering experience. But in most smaller setups, it’s a distraction. You spend six months building a platform so you can finally start delivering insights - only to discover that a managed platform could’ve had you there in six weeks.</p>
-<p>Total Cost of Ownership isn’t just about money.<br>
-It’s about <em>focus, time, and the kind of team you want to grow</em>.<br>
-Buy if you want to move fast and learn about your business.<br>
-Build if your data platform itself is part of your business.</p>
-<p>But whatever you do&hellip;</p>
-<p><strong>Make sure you’re measuring the cost of ownership, not just the cost of the invoice.</strong></p>
+<h2 id="5-governance-and-security">5. Governance and Security</h2>
+<p>To be fair: IT brings something irreplaceable: <strong>governance discipline</strong>.</p>
+<p>Security, compliance, access control, and auditability are not things business-led teams typically enjoy maintaining.<br>
+If your industry is regulated (finance, health, energy), you absolutely need IT’s rigor.</p>
+<p>But that doesn’t mean IT has to <em>own</em> all of data — just the guardrails.<br>
+A common (and healthy) model is:</p>
+<ul>
+<li><strong>Data platform and infrastructure in IT</strong></li>
+<li><strong>Analytics and modeling in the business</strong></li>
+</ul>
+<p>That keeps governance centralized but lets insights flow freely.</p>
+<hr>
+<h2 id="6-company-size-and-stage">6. Company Size and Stage</h2>
+<p>There’s a natural lifecycle to where data belongs.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Stage</th>
+          <th>Typical Setup</th>
+          <th>Rationale</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Early-stage (0-100 people)</strong></td>
+          <td>A few analysts under Product or Finance</td>
+          <td>Speed and flexibility matter most</td>
+      </tr>
+      <tr>
+          <td><strong>Growth (100-1000)</strong></td>
+          <td>Hybrid: IT owns platform, business owns analytics</td>
+          <td>Balance structure with agility</td>
+      </tr>
+      <tr>
+          <td><strong>Enterprise (1000+)</strong></td>
+          <td>Federated model with a CDO</td>
+          <td>Scale and governance dominate</td>
+      </tr>
+  </tbody>
+</table>
+<p>Most teams move through these phases whether they plan to or not.<br>
+The key is to notice when your current setup starts to create friction and adjust before your org calcifies.</p>
+<hr>
+<h2 id="7-the-rise-of-hybrid-models">7. The Rise of Hybrid Models</h2>
+<p>More and more companies are landing on <strong>hybrid data organizations</strong>:</p>
+<ul>
+<li><strong>Data Platform in IT</strong><br>
+Focused on infrastructure, reliability, and governance.</li>
+<li><strong>Data Products in Business Units</strong><br>
+Focused on insight generation, experimentation, and value delivery.</li>
+<li><strong>Central Data Leadership (CDO or Head of Data)</strong><br>
+Bridges both sides, sets standards, and aligns priorities.</li>
+</ul>
+<p>This model accepts the obvious truth:<br>
+Data isn’t purely a technical or business concern. It’s both.<br>
+The goal isn’t ownership. It’s <em>alignment</em>.</p>
+<hr>
+<h2 id="argue-about-purpose">Argue About Purpose</h2>
+<p>Whether your data organization sits in IT or elsewhere is ultimately secondary.<br>
+What really matters is <strong>clarity of purpose</strong> and <strong>alignment of incentives</strong>.</p>
+<p>If your goal is reliability and compliance, IT is the right home.<br>
+If your goal is experimentation, enablement, and business insight, give data its own leadership seat — or at least let it breathe outside IT’s process machinery.</p>
+<p>Personally, I’ve seen small teams move <em>much</em> faster once they stopped treating data as infrastructure and started treating it as a product.<br>
+And ironically, the more independent the data org became, the better its collaboration with IT got. Because the boundaries were finally clear.</p>
+<p><strong>Where data sits matters less than what it’s accountable for.</strong><br>
+Decide that first, the org chart will follow.</p>
 
           </article>
         </div>
@@ -443,13 +496,14 @@ Build if your data platform itself is part of your business.</p>
                 <nav id="TableOfContents">
   <ul>
     <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#1-the-illusion-of-control">1. The Illusion of Control</a></li>
-    <li><a href="#2-tco-not-on-the-invoice">2. TCO: Not on the Invoice</a></li>
-    <li><a href="#3-slow-data-stacks">3. Slow Data Stacks</a></li>
-    <li><a href="#4-renting-velocity">4. Renting Velocity</a></li>
-    <li><a href="#5-tco-is-multi-dimensional">5. TCO Is Multi-Dimensional</a></li>
-    <li><a href="#6-the-lifecycle-trap">6. The “Lifecycle Trap”</a></li>
-    <li><a href="#7-conclusion-buy-back-your-focus">7. Conclusion: Buy Back Your Focus</a></li>
+    <li><a href="#1-purpose-and-maturity">1. Purpose and Maturity</a></li>
+    <li><a href="#2-ownership-of-outcomes">2. Ownership of Outcomes</a></li>
+    <li><a href="#3-speed-vs-standardization">3. Speed vs. Standardization</a></li>
+    <li><a href="#4-talent-and-culture">4. Talent and Culture</a></li>
+    <li><a href="#5-governance-and-security">5. Governance and Security</a></li>
+    <li><a href="#6-company-size-and-stage">6. Company Size and Stage</a></li>
+    <li><a href="#7-the-rise-of-hybrid-models">7. The Rise of Hybrid Models</a></li>
+    <li><a href="#argue-about-purpose">Argue About Purpose</a></li>
   </ul>
 </nav>
               </div>
@@ -477,13 +531,9 @@ Build if your data platform itself is part of your business.</p>
                 target="_blank"
               >Management</a></li>
               
-              <li class="list-inline-item"><a href="https://davidmaas.de/tags/saas"
+              <li class="list-inline-item"><a href="https://davidmaas.de/tags/organization"
                 target="_blank"
-              >SaaS</a></li>
-              
-              <li class="list-inline-item"><a href="https://davidmaas.de/tags/cloud"
-                target="_blank"
-              >Cloud</a></li>
+              >Organization</a></li>
               
             </ul>
           </aside>
@@ -495,22 +545,22 @@ Build if your data platform itself is part of your business.</p>
             <div class="social-content">
               <ul class="list-inline">
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://www.linkedin.com/feed/?shareActive=true&text=This%20blog%20post%20tries%20to%20emphasize%20why%20value-driven%20decision%20making%20should%20matter. https%3a%2f%2fdavidmaas.de%2fblog%2ftco%2f">
+                  <a target="_blank" href="https://www.linkedin.com/feed/?shareActive=true&text= https%3a%2f%2fdavidmaas.de%2fblog%2fdata-org%2f">
                     <i class="fab fa-linkedin"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='https://twitter.com/share?text=Data%20Architecture%20and%20the%20Real%20Total%20Cost%20of%20Ownership%3a%20Why%20%e2%80%9cMake%20or%20Buy%e2%80%9d%20Is%20Harder%20Than%20It%20Looks&url=https%3a%2f%2fdavidmaas.de%2fblog%2ftco%2f&hashtags=CTO%2cData%2cStrategy%2cManagement%2cSaaS%2cCloud'>
+                  <a target="_blank" href='https://twitter.com/share?text=Should%20the%20Data%20Organization%20Sit%20in%20IT%3f&url=https%3a%2f%2fdavidmaas.de%2fblog%2fdata-org%2f&hashtags=CTO%2cData%2cStrategy%2cManagement%2cOrganization'>
                     <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href="https://api.whatsapp.com/send?text=Data%20Architecture%20and%20the%20Real%20Total%20Cost%20of%20Ownership%3a%20Why%20%e2%80%9cMake%20or%20Buy%e2%80%9d%20Is%20Harder%20Than%20It%20Looks: https%3a%2f%2fdavidmaas.de%2fblog%2ftco%2f">
+                  <a target="_blank" href="https://api.whatsapp.com/send?text=Should%20the%20Data%20Organization%20Sit%20in%20IT%3f: https%3a%2f%2fdavidmaas.de%2fblog%2fdata-org%2f">
                     <i class="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li class="list-inline-item text-center">
-                  <a target="_blank" href='mailto:?subject=Data%20Architecture%20and%20the%20Real%20Total%20Cost%20of%20Ownership%3a%20Why%20%e2%80%9cMake%20or%20Buy%e2%80%9d%20Is%20Harder%20Than%20It%20Looks&amp;body=Check%20out%20this%20site https%3a%2f%2fdavidmaas.de%2fblog%2ftco%2f'>
+                  <a target="_blank" href='mailto:?subject=Should%20the%20Data%20Organization%20Sit%20in%20IT%3f&amp;body=Check%20out%20this%20site https%3a%2f%2fdavidmaas.de%2fblog%2fdata-org%2f'>
                     <i class="fa fa-envelope"></i>
                   </a>
                 </li>
