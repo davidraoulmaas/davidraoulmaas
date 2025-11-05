@@ -79,6 +79,7 @@ jobs:
             hugo-
       - name: Build the site
         run: |
+          cd davidmaas.de
           hugo \
             --gc \
             --minify \
