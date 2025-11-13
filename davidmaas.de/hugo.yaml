@@ -86,7 +86,7 @@ params:
 
   theme:
     # disableThemeToggle: true
-    # defaultTheme: "light" # dark
+    defaultTheme: "light" # dark
 
   font:
     fontSize: 1rem # default: 1rem
@@ -166,105 +166,114 @@ params:
       #     url: "https://example.com"
 
   # About
-  # about:
-  #   enable: true
-  #   title: "About Me"
-  #   image: "/images/2024_1.jpg"
-  #   roundImage: false
-  #   content: |-
-  #     I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
+  about:
+    enable: true
+    title: "About Me"
+    # image: "/images/2024_1.jpg"
+    roundImage: false
+    content: |-
+      I am currently working as a Senior Data Engineer at [Varengold](https://varengold.de) in Hamburg, Germany.
 
-  #     I am currently working on a project that will be used to help people find the best way to get around the city.
-  #   skills:
-  #     enable: true
-  #     title: "Here are a few technologies I've been working with recently:"
-  #     items:
-  #       - "Python"
-  #       - "SQL"
-  #       - "AWS Redshift"
-  #       - "Docker"
-  #       - "PowerBI"
+      I work on modern data infrastructure and analytics enablement, combining hands-on expertise with a strategic perspective on architecture, governance, and organizational scaling.
+    skills:
+      enable: true
+      title: "Here are a few things I've been working with recently:"
+      items:
+        - "Python"
+        - "SQL"
+        - "AWS Redshift"
+        - "Docker"
+        - "PowerBI"
+        - "Datavault 2.0"
+        - "dlthub"
+        - "dbt-core"
 
   # Experience
-  # experience:
-  #   enable: true
-  #   # title: "Custom Name"
-  #   items:
-  #     - company: "Facebook"
-  #       companyUrl: "https://example.com"
-  #       jobs:
-  #         - name: "Senior Software Developer"
-  #           date: "Jan 2023 - present"
-  #           content: "I am currently working as a senior software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-  #           info:
-  #             content: Working as a senior software developer
-  #           featuredItems:
-  #             fontAwesomeIcons:
-  #               - icon: fa-brands fa-react
-  #                 url: https://react.dev/
-  #                 tooltip: Example tooltip content
-  #               - icon: fab fa-x-twitter
-  #                 url: https://example.com
-  #                 # tooltip: Example tooltip content
-  #             customIcons:
-  #               - icon: /fav.png
-  #                 url: "https://example.com"
-  #                 tooltip: Example tooltip content
-  #         - name: "Software Developer"
-  #           date: "Jan 2022 - Dec 2023"
-  #           content: "I worked as a software developer. I worked on a project that will be used to help people find the best way to get around the city."
+  experience:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - company: "Varengold Bank AG"
+        companyUrl: "https://varengold.de"
+        jobs:
+          - name: "Senior Data Engineer"
+            date: "Jan 2025 - present"
+            content: |
+              Working on a modern data stack that redefines the status-quo.
+              - Creation of the data strategy and planning of the implementation project
+              - Establishment and development of the project team
+              - Architect and developer
+            info:
+              content: Working as a senior data engineer.
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-brands fa-confluence
+                  url: https://confluence.com/
+                  tooltip: Confluence
+                - icon: fab fa-jira
+                  url: https://jira.com
+                  tooltip: Jira
+                - icon: fab fa-square-gitlab
+                  url: https://gitlab.com
+                  tooltip: Gitlab
+                - icon: fab fa-docker
+                  url: https://docker.com
+                  tooltip: Docker
+                - icon: fas fa-database
+                  url: https://aws.amazon.com/en/redshift/
+                  tooltip: AWS Redshift
+                - icon: fab fa-aws
+                  url: https://aws.amazon.com/
+                  tooltip: AWS
+              # customIcons:
+              #   - icon: /fav.png
+              #     url: "https://example.com"
+              #     tooltip: Example tooltip content
+          
 
-  #     - company: "Amazon"
-  #       companyUrl: "https://example.com"
-  #       jobs:
-  #         - name: "Software Developer"
-  #           date: "Sep 2020 - Dec 2021"
-  #           info:
-  #             content: I worked as a software developer for more than one year in Amazon.
-  #           content: |
-  #             I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-  #             - Lead backend developer for a product.
-  #             - Created a frontend design for a product.
-
-  #     - company: "Apple"
-  #       companyUrl: "https://example.com"
-  #       jobs: 
-  #       - name: "Junior Software Developer"
-  #         date: "Jan 2020 - Aug 2020"
-  #         featuredItems:
-  #           fontAwesomeIcons:
-  #             - icon: fa-brands fa-react
-  #               url: https://react.dev/
-  #             - icon: fab fa-x-twitter
-  #               url: https://example.com
-  #           customIcons:
-  #             - icon: /fav.png
-  #               url: "https://example.com"
-  #         content: |
-  #           I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-  #           - Lead backend developer for a product.
-  #           - Created a frontend design for a product.
-
-  #     - company: "Netflix"
-  #       companyUrl: "https://example.com"
-  #       jobs:
-  #       - name: "UI/UX Designer"
-  #         date: "June 2017 - Nov 2019"
-  #         content: |
-  #           I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-  #           - Lead backend developer for a product.
-  #           - Created a frontend design for a product.
-
-  #     - company: "Google"
-  #       companyUrl: "https://example.com"
-  #       jobs:
-  #       - name: "Product Designer"
-  #         date: "Feb 2016 - Mar 2017"
-  #         content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
+      - company: "datasigns UG"
+        companyUrl: "https://datasigns.de"
+        jobs:
+          - name: "Freelancer"
+            date: "May 2022 - Dec 2025"
+            content: | 
+              Freelancer in data engineering, analytics and strategy projects.
+              - Development of a data warehouse and reporting landscape for a media group
+              - Front-end system connections for a planning and consolidation solution for various customers
+              - Data strategy project in a biotech company
+            info:
+              content: Working as a senior software developer
+            
+              
+      - company: "verovis GmbH"
+        companyUrl: "https://verovis.de"
+        jobs:
+          - name: "Manager & Service Lead Advanced Analytics"
+            date: "Jan 2021 - Dec 2021"
+            info:
+              content: Manager and Service Leader
+            content: |
+              - Establishment and disciplinary management of the “Advanced Analytics” consulting field
+              - Introduction of a planning and consolidation solution in a biotech company
+              - Contributor Analytics PoC in a Swiss logistics group
+              - Demand forecasting for a well-known sporting goods manufacturer
+              - Development of a new business model for a leading German company in the automotive industry
+          - name: "Senior Consultant & Service Lead Advanced Analytics"
+            date: "Jul 2019 - Dec 2020"
+            info:
+              content: Senior Consultant and Service Leader
+            content: |
+              - Selection of planning and consolidation software for a biotech company
+              - Anomaly detection in the purchasing process of an energy group
+              - Cash forecasting for a company in the energy sector
+              - Analysis of the cash flow of a company in the energy sector
+          - name: "Consultant"
+            date: "Jan 2018 - Jun 2019"
+            info:
+              content: Senior Consultant and Service Leader
+            content: |
+              - Anomaly detection in the group reporting of a logistics company
+              - Introduction of a planning and consolidation solution in an energy group
   # # Education
   # education:
   #   enable: true

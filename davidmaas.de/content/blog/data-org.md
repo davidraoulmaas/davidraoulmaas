@@ -25,7 +25,7 @@ I’ve seen both setups and both can work.
 But the placement of the data team deeply shapes its culture, priorities, and even its speed.  
 And while many companies instinctively tuck data under IT, that’s often more out of legacy convenience than strategic clarity.
 
-Let’s unpack what really drives this decision — and when it might be time to move your data team out of IT’s basement.
+Let’s unpack what really drives this decision and when it might be time to move your data team out of IT’s basement.
 
 ---
 
@@ -34,12 +34,12 @@ Let’s unpack what really drives this decision — and when it might be time to
 The first question is simple but revealing:  
 **What is your data team actually responsible for?**
 
-> If your main goal is **reliable pipelines, stable infrastructure, and compliance**, then IT alignment makes sense. IT already knows how to run systems, standardize tools, and manage SLAs.
+--> If your main goal is **reliable pipelines, stable infrastructure, and compliance**, then IT alignment makes sense. IT already knows how to run systems, standardize tools, and manage SLAs.
 
-> But if your team’s mission is **insights, enablement, and data products**, the IT framing quickly becomes a bottleneck. Data becomes less about tickets and uptime and more about discovery and iteration.
+--> But if your team’s mission is **insights, enablement, and data products**, the IT framing quickly becomes a bottleneck. Data becomes less about tickets and uptime and more about discovery and iteration.
 
-In early-stage companies, data often starts close to product or finance. It’s lightweight, business-driven, and fast.  
-Over time, as complexity grows, someone inevitably says: *“We need to formalize this - let’s move it under IT.”*  
+In early-stage companies, data often starts close to product or finance. It’s lightweight, business-driven, and fast. Over time, as complexity grows, someone inevitably says: *“We need to formalize this - let’s move it under IT.”*  
+
 That’s when data starts to slow down.
 
 **Rule of thumb:**  
@@ -137,13 +137,13 @@ The key is to notice when your current setup starts to create friction and adjus
 
 More and more companies are landing on **hybrid data organizations**:
 
-> **Data Platform in IT**  
+--> **Data Platform in IT**  
   Focused on infrastructure, reliability, and governance.  
 
-> **Data Products in Business Units**  
+--> **Data Products in Business Units**  
   Focused on insight generation, experimentation, and value delivery.  
 
-> **Central Data Leadership (CDO or Head of Data)**  
+--> **Central Data Leadership (CDO or Head of Data)**  
   Bridges both sides, sets standards, and aligns priorities.
 
 This model accepts the obvious truth:  
