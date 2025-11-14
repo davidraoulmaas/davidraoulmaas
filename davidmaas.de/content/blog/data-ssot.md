@@ -56,48 +56,38 @@ So maybe the issue isn’t that we lack a single source. It’s that we expect t
 
 ---
 
-## Data Modeling: Many Paths to (Partial) Truth
+## Alignment Over Architecture
+Most SSOT failures have nothing to do with technology. They fail because humans don’t agree.
 
-Different data modeling techniques have tried to bring order to this chaos. Each with its own take on what “truth” means.
+Different teams optimize for different outcomes.
+Definitions become political.
+KPIs get negotiated.
+And even the cleanest architecture can’t magically unify the business if the organization itself isn’t aligned.
 
-**Third Normal Form (3NF)**  
-The traditional **relational modeling** approach focuses on eliminating redundancy and preserving data integrity.  
-It’s excellent for operational consistency. Ensuring that “Customer ID 123” always represents the same entity across systems.  
-But 3NF models can be hard to interpret analytically and often need transformation for reporting purposes.
+A chapter about data modeling often focuses on schemas, joins and table structures. But the deeper issue is who owns the meaning of the data.
 
-**Dimensional Modeling (Kimball)**  
-The **star schema** popularized by Ralph Kimball prioritizes clarity and usability.  
-It defines business processes (facts) and shared dimensions (like customers or products) in consistent, business-friendly terms.  
-In many organizations, this is the *de facto* SSOT for analytics.  
-But dimensional models are curated views of truth, not its raw origin. They abstract away messy operational realities.
+A modern data team must:
 
-**Data Vault Modeling**  
-**Data Vault** (Dan Linstedt) focuses on traceability and historical accuracy.  
-It separates *raw, immutable data* (the Raw Vault) from *business logic* (the Business Vault).  
-The result is not one single truth, but **a transparent record of all possible truths**, along with the rules that define each.  
-It’s excellent for auditability and governance, but not necessarily for end-user simplicity.
+- mediate definitions between stakeholders
+- challenge unhelpful interpretations
+- ask uncomfortable questions about KPI ownership
+- ensure definitions don’t contradict each other
+- build agreement, not just pipelines
 
-**Data Lakehouse and Semantic Layers**  
-Modern architectures now blend storage and analytics through **data lakehouses** and **semantic layers**.  
-These promise a single access layer for data across formats and domains, effectively a “virtual” single source of truth.  
-But they don’t solve the definition problem: if your metric logic differs between dashboards, the illusion of a single truth quickly dissolves.
+The SSOT conversation isn’t about storage. It’s about alignment.
+Without this alignment, no model, no platform and no governance tool will save you.
 
 ---
 
-## Master Data Management: Anchoring Shared Entities
+## MDM, Data Catalogs and Shared Meaning
 
-If data modeling gives structure, **Master Data Management (MDM)** gives consistency.  
-MDM provides a single, authoritative view of core entities like customers, products, suppliers, that anchor all other data.  
+Even if a single storage-based SSOT doesn’t exist, we still need shared meaning. That’s where tools like Master Data Management and Data Catalogs come in:
 
-It doesn’t make *all* data single-source, but it creates a **shared foundation** that supports interoperability across systems.  
-In that sense, MDM is a practical embodiment of the SSOT ideal, within a defined scope.
+- MDM helps maintain golden records when multiple systems describe the same entity
+- Data Catalogs create transparency: who owns what, what it means and how it should be used
+- Semantic layers unify definitions even when data is scattered
 
----
-
-## Data Catalogues: The Map to Meaning
-
-Even the best-modeled and best-governed data is useless if people can’t find or understand it.  
-That’s where **data catalogues** come in.  
+These tools don’t create a single truth. They create consistency where it matters and visibility where it doesn’t.
 
 A modern data catalogue connects metadata, lineage, ownership, and business definitions.  
 It doesn’t create truth, but it **makes truth discoverable and explainable**.  

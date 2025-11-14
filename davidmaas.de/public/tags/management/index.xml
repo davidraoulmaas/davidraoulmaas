@@ -2,31 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Management on davidmaas</title>
-    <link>https://davidmaas.de/tags/management/</link>
+    <link>http://localhost:1313/tags/management/</link>
     <description>Recent content in Management on davidmaas</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Nov 2025 18:29:21 +0100</lastBuildDate>
-    <atom:link href="https://davidmaas.de/tags/management/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Nov 2025 18:29:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Does the Single Source of Truth Exist?</title>
+      <link>http://localhost:1313/blog/data-ssot/</link>
+      <pubDate>Thu, 13 Nov 2025 18:29:21 +0100</pubDate>
+      <guid>http://localhost:1313/blog/data-ssot/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;“Single Source of Truth”&lt;/p&gt;&#xA;&lt;p&gt;Few phrases in data management sound as definitive, and few are as misunderstood.&lt;br&gt;&#xA;For decades, it’s been the rallying cry of analytics and IT teams: one place where data is clean, consistent, and universally trusted.&lt;/p&gt;&#xA;&lt;p&gt;But after countless data warehouses, data lakes, and governance initiatives, many organizations still struggle with conflicting numbers and fragmented definitions.&lt;br&gt;&#xA;So it’s worth asking: &lt;strong&gt;does the single source of truth actually exist?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Should the Data Organization Sit in IT?</title>
-      <link>https://davidmaas.de/blog/data-org/</link>
+      <link>http://localhost:1313/blog/data-org/</link>
       <pubDate>Wed, 05 Nov 2025 18:29:21 +0100</pubDate>
-      <guid>https://davidmaas.de/blog/data-org/</guid>
+      <guid>http://localhost:1313/blog/data-org/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Few questions in data leadership spark as much debate as this one:&lt;br&gt;&#xA;&lt;strong&gt;Should the data organization sit in IT, or should it stand on its own?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;At first glance, it sounds like an org-chart detail. In reality, it defines how your company thinks about data: as &lt;em&gt;infrastructure&lt;/em&gt; or as &lt;em&gt;a product&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I’ve seen both setups and both can work.&lt;br&gt;&#xA;But the placement of the data team deeply shapes its culture, priorities, and even its speed.&lt;br&gt;&#xA;And while many companies instinctively tuck data under IT, that’s often more out of legacy convenience than strategic clarity.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is Harder Than It Looks</title>
-      <link>https://davidmaas.de/blog/tco/</link>
+      <link>http://localhost:1313/blog/tco/</link>
       <pubDate>Wed, 05 Nov 2025 16:29:21 +0100</pubDate>
-      <guid>https://davidmaas.de/blog/tco/</guid>
+      <guid>http://localhost:1313/blog/tco/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Every leadership team faces the same strategic dilemma sooner or later:&lt;br&gt;&#xA;&lt;strong&gt;Should we build our own data stack, or should we buy into managed solutions?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;On paper, the choice seems straightforward. “Building” gives you control and flexibility; “buying” gives you speed and convenience. In reality, the trade-offs run much deeper, especially when you look through the lens of &lt;strong&gt;Total Cost of Ownership (TCO)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Over the last few years, I’ve seen and have been part of teams starting with a DIY approach. State-of-the-art, terraform, containers, Airflow, dbt core, the works. It feels empowering: you control the stack, optimize for cost, and get to build something elegant and custom.&lt;br&gt;&#xA;But as months pass, the picture changes. What starts as an engineering playground quickly becomes a maintenance treadmill.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Evolution of Data Architecture</title>
-      <link>https://davidmaas.de/blog/data-evolution/</link>
+      <link>http://localhost:1313/blog/data-evolution/</link>
       <pubDate>Wed, 05 Nov 2025 13:29:21 +0100</pubDate>
-      <guid>https://davidmaas.de/blog/data-evolution/</guid>
+      <guid>http://localhost:1313/blog/data-evolution/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;If you’ve been around data long enough, you’ve probably seen this movie before.&lt;br&gt;&#xA;First, we fell in love with &lt;em&gt;no-/low-code ETL tools&lt;/em&gt; like SSIS, Matillion or Alteryx. Drag-and-drop nodes, colorful workflows, and a promise that “anyone can build data pipelines.”&lt;br&gt;&#xA;Then came the backlash: engineers wanted code, reproducibility, and control. Suddenly, everything had to be &lt;em&gt;in Terraform, Dockerized, and YAML-defined&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;And now?&lt;br&gt;&#xA;We’re swinging back again, toward SaaS-first, declarative, and low-code data platforms.&lt;br&gt;&#xA;Only this time, it’s not because we want simplicity. It’s because &lt;strong&gt;complexity finally became too expensive&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
   </channel>

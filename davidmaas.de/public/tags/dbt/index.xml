@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dbt on davidmaas</title>
+    <link>http://localhost:1313/tags/dbt/</link>
+    <description>Recent content in Dbt on davidmaas</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Nov 2025 18:29:21 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dbt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Datavault Training | with datavaut4dbt on DuckDB</title>
+      <link>http://localhost:1313/blog/datavault4dbtonduckdb/</link>
+      <pubDate>Sun, 09 Nov 2025 18:29:21 +0100</pubDate>
+      <guid>http://localhost:1313/blog/datavault4dbtonduckdb/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;If you are reading this, chances are you know &lt;a href=&#34;https://getdbt.com&#34;&gt;dbt&lt;/a&gt;. You probably also heard about Data Vault data modeling. In this post, I will show you how to build a Data Vault 2.0 model using &lt;a href=&#34;https://github.com/davidraoulmaas/datavault4dbtonduckdb&#34;&gt;datavault4dbt - on DuckDB&lt;/a&gt;, my DuckDB adaption of &lt;a href=&#34;https://github.com/ScalefreeCOM/datavault4dbt&#34;&gt;Scalefrees datavault4dbt package&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Data Vault modeling has a bit of an entry barrier, because its concept is a bit more complex in the beginning. As it is usually used in business datawarehouses, you normally learn about it in business context and in paid trainings where you can also obtain official certifications. Free and easily accessible resources are rare.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

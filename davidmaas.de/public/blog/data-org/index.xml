@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Should the Data Organization Sit in IT? on davidmaas</title>
-    <link>https://davidmaas.de/blog/data-org/</link>
+    <link>http://localhost:1313/blog/data-org/</link>
     <description>Recent content in Should the Data Organization Sit in IT? on davidmaas</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://davidmaas.de/blog/data-org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/blog/data-org/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

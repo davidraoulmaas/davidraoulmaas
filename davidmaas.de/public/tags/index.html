@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><meta charset="UTF-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
@@ -28,7 +28,7 @@
 
 
 
-<meta property="og:url" content="https://davidmaas.de/tags/">
+<meta property="og:url" content="http://localhost:1313/tags/">
   <meta property="og:site_name" content="davidmaas">
   <meta property="og:title" content="Tags">
   <meta property="og:description" content="David Raoul Maas is a Data Leader with 10&#43; years of experience. You can catch a first impression of him on this website.">
@@ -207,7 +207,20 @@ Tags | davidmaas
                     
 
                     
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
 
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
                     
 
                     
@@ -288,7 +301,7 @@ Tags | davidmaas
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Nov 5, 2025</span>
+                        <span class="float-start bg-transparent">Nov 13, 2025</span>
                         <a href="/tags/cto/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
@@ -308,7 +321,7 @@ Tags | davidmaas
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Nov 5, 2025</span>
+                        <span class="float-start bg-transparent">Nov 13, 2025</span>
                         <a href="/tags/data/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
@@ -328,7 +341,7 @@ Tags | davidmaas
                         </div>
                     </div>
                     <div class="mt-auto post-footer bg-transparent py-3">
-                        <span class="float-start bg-transparent">Nov 5, 2025</span>
+                        <span class="float-start bg-transparent">Nov 13, 2025</span>
                         <a href="/tags/management/" class="float-end btn btn-outline-info btn-sm">Read</a>
                     </div>
                 </div>
@@ -355,10 +368,13 @@ Tags | davidmaas
         <a href="/tags/page/3/" aria-label="Page 3" class="page-link" role="button">3</a>
       </li>
       <li class="page-item">
+        <a href="/tags/page/4/" aria-label="Page 4" class="page-link" role="button">4</a>
+      </li>
+      <li class="page-item">
         <a href="/tags/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
       </li>
       <li class="page-item">
-        <a href="/tags/page/3/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+        <a href="/tags/page/4/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul>
             </div>
@@ -422,7 +438,7 @@ Tags | davidmaas
         <div class="col-md-4 text-center">
             
                 <div class="pb-2">
-                    <a href="https://davidmaas.de/" title="davidmaas">
+                    <a href="http://localhost:1313/" title="davidmaas">
                         <img alt="Footer logo" src="/fav.png"
                             height="40px" width="40px">
                     </a>
@@ -445,18 +461,14 @@ Tags | davidmaas
 </div>
 </footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
 <script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.documentElement.classList.add('dark');
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
         document.documentElement.classList.remove('dark');
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.documentElement.classList.add('dark');
-        document.body.classList.add('dark');
+        localStorage.setItem("pref-theme", 'light');
     }
-
 </script>
+
+
 <script>
     document.getElementById("theme-toggle").addEventListener("click", () => {
         if (document.body.className.includes("dark")) {

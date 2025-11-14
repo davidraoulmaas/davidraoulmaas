@@ -2,45 +2,60 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://davidmaas.de/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
+    <lastmod>2025-11-13T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cto/</loc>
+    <lastmod>2025-11-13T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/data/</loc>
+    <lastmod>2025-11-13T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-11-13T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/data-ssot/</loc>
+    <lastmod>2025-11-13T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/management/</loc>
+    <lastmod>2025-11-13T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/organization/</loc>
+    <lastmod>2025-11-13T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/strategy/</loc>
+    <lastmod>2025-11-13T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-11-13T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/data-engineering/</loc>
+    <lastmod>2025-11-09T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/datavault-2.0/</loc>
+    <lastmod>2025-11-09T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/datavault4dbtonduckdb/</loc>
+    <lastmod>2025-11-09T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/dbt/</loc>
+    <lastmod>2025-11-09T18:29:21+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/blog/data-org/</loc>
     <lastmod>2025-11-05T18:29:21+01:00</lastmod>
   </url><url>
-    <loc>https://davidmaas.de/tags/cto/</loc>
-    <lastmod>2025-11-05T18:29:21+01:00</lastmod>
-  </url><url>
-    <loc>https://davidmaas.de/tags/data/</loc>
-    <lastmod>2025-11-05T18:29:21+01:00</lastmod>
-  </url><url>
-    <loc>https://davidmaas.de/</loc>
-    <lastmod>2025-11-05T18:29:21+01:00</lastmod>
-  </url><url>
-    <loc>https://davidmaas.de/tags/management/</loc>
-    <lastmod>2025-11-05T18:29:21+01:00</lastmod>
-  </url><url>
-    <loc>https://davidmaas.de/tags/organization/</loc>
-    <lastmod>2025-11-05T18:29:21+01:00</lastmod>
-  </url><url>
-    <loc>https://davidmaas.de/blog/data-org/</loc>
-    <lastmod>2025-11-05T18:29:21+01:00</lastmod>
-  </url><url>
-    <loc>https://davidmaas.de/tags/strategy/</loc>
-    <lastmod>2025-11-05T18:29:21+01:00</lastmod>
-  </url><url>
-    <loc>https://davidmaas.de/tags/</loc>
-    <lastmod>2025-11-05T18:29:21+01:00</lastmod>
-  </url><url>
-    <loc>https://davidmaas.de/tags/cloud/</loc>
+    <loc>http://localhost:1313/tags/cloud/</loc>
     <lastmod>2025-11-05T16:29:21+01:00</lastmod>
   </url><url>
-    <loc>https://davidmaas.de/blog/tco/</loc>
+    <loc>http://localhost:1313/blog/tco/</loc>
     <lastmod>2025-11-05T16:29:21+01:00</lastmod>
   </url><url>
-    <loc>https://davidmaas.de/tags/saas/</loc>
+    <loc>http://localhost:1313/tags/saas/</loc>
     <lastmod>2025-11-05T16:29:21+01:00</lastmod>
   </url><url>
-    <loc>https://davidmaas.de/blog/data-evolution/</loc>
+    <loc>http://localhost:1313/blog/data-evolution/</loc>
     <lastmod>2025-11-05T13:29:21+01:00</lastmod>
   </url><url>
-    <loc>https://davidmaas.de/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

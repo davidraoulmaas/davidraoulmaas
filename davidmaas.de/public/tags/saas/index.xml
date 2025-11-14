@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SaaS on davidmaas</title>
-    <link>https://davidmaas.de/tags/saas/</link>
+    <link>http://localhost:1313/tags/saas/</link>
     <description>Recent content in SaaS on davidmaas</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Nov 2025 16:29:21 +0100</lastBuildDate>
-    <atom:link href="https://davidmaas.de/tags/saas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/saas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Data Architecture and the Real Total Cost of Ownership: Why “Make or Buy” Is Harder Than It Looks</title>
-      <link>https://davidmaas.de/blog/tco/</link>
+      <link>http://localhost:1313/blog/tco/</link>
       <pubDate>Wed, 05 Nov 2025 16:29:21 +0100</pubDate>
-      <guid>https://davidmaas.de/blog/tco/</guid>
+      <guid>http://localhost:1313/blog/tco/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;Every leadership team faces the same strategic dilemma sooner or later:&lt;br&gt;&#xA;&lt;strong&gt;Should we build our own data stack, or should we buy into managed solutions?&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;On paper, the choice seems straightforward. “Building” gives you control and flexibility; “buying” gives you speed and convenience. In reality, the trade-offs run much deeper, especially when you look through the lens of &lt;strong&gt;Total Cost of Ownership (TCO)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Over the last few years, I’ve seen and have been part of teams starting with a DIY approach. State-of-the-art, terraform, containers, Airflow, dbt core, the works. It feels empowering: you control the stack, optimize for cost, and get to build something elegant and custom.&lt;br&gt;&#xA;But as months pass, the picture changes. What starts as an engineering playground quickly becomes a maintenance treadmill.&lt;/p&gt;</description>
     </item>
   </channel>
