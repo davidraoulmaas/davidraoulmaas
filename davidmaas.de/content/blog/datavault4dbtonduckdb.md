@@ -1,7 +1,7 @@
 ---
 title: "Datavault Training | with datavaut4dbt on DuckDB"
 date: 2025-11-09T18:29:21+01:00
-draft: false
+draft: true
 author: "David Raoul Maas"
 tags:
   - Datavault 2.0
