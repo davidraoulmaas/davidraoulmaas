@@ -10,7 +10,7 @@ tags:
   - Management
   - Organization
 image: /images/blog_data_org.png
-description: ""
+description: "Some thought on organizational structures related to data teams."
 toc:
 ---
 

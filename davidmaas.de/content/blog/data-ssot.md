@@ -10,7 +10,7 @@ tags:
   - Management
   - Organization
 image: /images/blog_data_ssot.png
-description: ""
+description: "Is the holy grail of data an achievable goal?"
 toc:
 ---
 
