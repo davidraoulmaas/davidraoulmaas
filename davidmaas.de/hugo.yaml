@@ -161,6 +161,7 @@ params:
           url: https://www.xing.com/profile/DavidRaoul_Maas
         - icon: fa-solid fa-square-envelope
           url: mailto:davidmaas_web@outlook.com
+          
       # customIcons:
       #   - icon: /fav.png
       #     url: "https://example.com"
@@ -405,18 +406,18 @@ params:
 
   footer:
     recentPosts:
-      path: "blogs"
+      path: "blog"
       count: 3
       title: Recent Posts
       enable: true
-      disableFeaturedImage: false
+      disableFeaturedImage: true
     socialNetworks:
       github: https://github.com/davidraoulmaas
       linkedin: https://www.linkedin.com/in/david-raoul-maas/
 
   # # List pages like blogs and posts
   listPages:
-    disableFeaturedImage: false
+    disableFeaturedImage: true
 
   # Single pages like blog and post
   singlePages:
